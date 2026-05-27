@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AI Content Board</title>
+    <meta name="description" content="Privacy Policy for the AI Content Board application. Learn how we handle your data, Gemini API keys, and YouTube OAuth credentials.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <div class="glow-container">
+        <div class="glow-sphere glow-1"></div>
+        <div class="glow-sphere glow-2"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">AI Content Board</span>
+            </div>
+            <div class="language-selector" id="lang-selector">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="th">TH</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="hero-section">
+            <div class="container text-center">
+                <span class="pill-badge en">Legal Documentation</span>
+                <span class="pill-badge th">เอกสารทางกฎหมาย</span>
+                <h1 class="hero-title en">Privacy Policy</h1>
+                <h1 class="hero-title th">นโยบายความเป็นส่วนตัว</h1>
+                <p class="hero-subtitle en">Effective Date: May 28, 2026</p>
+                <p class="hero-subtitle th">วันที่มีผลบังคับใช้: 28 พฤษภาคม 2569</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="glass-card main-policy-card">
+                    <!-- ENGLISH CONTENT -->
+                    <div class="lang-content" id="content-en">
+                        <div class="policy-intro">
+                            <p>This Privacy Policy explains how the <strong>AI Content Board</strong> ("Application", "we", "us", or "our") accesses, collects, stores, processes, and protects your information when you use our software, specifically in relation to the YouTube API Services and Google Gemini API.</p>
+                            <p>We value your privacy and are committed to ensuring that your data remains private, secure, and entirely under your control.</p>
+                        </div>
+
+                        <div class="policy-grid">
+                            <div class="policy-item" id="data-collection">
+                                <h2>1. Data We Access and Collect</h2>
+                                <p>AI Content Board is designed to run locally on your system or server. We do not operate central servers to collect your personal data. Below is the list of information the Application accesses to perform its functions:</p>
+                                <ul>
+                                    <li><strong>Google Gemini API Key:</strong> Provided by you to enable the AI-powered text generation for social media copies.</li>
+                                    <li><strong>YouTube OAuth Credentials (Client ID & Client Secret):</strong> Input by you or provided as application defaults to authenticate with YouTube API Services.</li>
+                                    <li><strong>YouTube Account Information:</strong> Once authenticated, we access your YouTube Channel Name and Profile to show connection status. We do not store your Google password.</li>
+                                    <li><strong>Video Files:</strong> Uploaded locally by you to the Application for the sole purpose of scheduling and publishing to your YouTube channel.</li>
+                                </ul>
+                            </div>
+
+                            <div class="policy-item" id="data-usage">
+                                <h2>2. How We Use Your Data</h2>
+                                <p>We only use the data accessed through Google APIs and input by you to facilitate the core functions of the Application:</p>
+                                <ul>
+                                    <li><strong>Content Generation:</strong> Your Gemini API Key is sent directly to Google Gemini API endpoints to generate custom copies, descriptions, and titles.</li>
+                                    <li><strong>YouTube Uploads:</strong> We use your authorized YouTube credentials to execute video uploads (via the <code>https://www.googleapis.com/auth/youtube.upload</code> scope) and retrieve channel status (via the <code>https://www.googleapis.com/auth/youtube.readonly</code> scope) on your behalf.</li>
+                                </ul>
+                            </div>
+
+                            <div class="policy-item" id="data-storage">
+                                <h2>3. Data Storage and Retention</h2>
+                                <p><strong>We do not run any database servers, nor do we transfer your credentials to any third parties.</strong></p>
+                                <ul>
+                                    <li>All API Keys, access tokens, and refresh tokens are stored locally on your machine (using browser local storage and local server files like <code>data/storage.json</code>).</li>
+                                    <li>Video files are stored temporarily on your local server and are removed or kept locally based on your storage configuration.</li>
+                                    <li>We do not share, sell, or lease your information to any third-party organizations.</li>
+                                </ul>
+                            </div>
+
+                            <div class="policy-item" id="data-security">
+                                <h2>4. Data Security</h2>
+                                <p>Since all data remains on your local machine, the security of your data depends on the security of your local environment. We recommend securing your local host, restricting unauthorized access, and avoiding sharing your local server endpoint publicly without proper authentication.</p>
+                            </div>
+
+                            <div class="policy-item" id="user-rights">
+                                <h2>5. Your Rights and Revoking Access</h2>
+                                <p>You have full control over the access granted to the Application at any time:</p>
+                                <ul>
+                                    <li><strong>Clear Local Storage:</strong> You can disconnect your accounts or reset settings directly in the Application header, which immediately deletes stored API keys and tokens from the local configuration.</li>
+                                    <li><strong>Revoke Google Access:</strong> You can revoke the Application's access to your Google account at any time via the Google Security Settings page at: <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" class="link-glow">Google Account Permissions</a>.</li>
+                                </ul>
+                            </div>
+
+                            <div class="policy-item" id="contact-info">
+                                <h2>6. Contact Developer</h2>
+                                <p>If you have any questions or concerns regarding this Privacy Policy or the AI Content Board app, please contact the developer at:</p>
+                                <div class="contact-box">
+                                    <p><strong>Developer Email:</strong> <span class="placeholder-text">[Your Contact Email / อีเมลผู้พัฒนา]</span></p>
+                                    <p><strong>GitHub:</strong> <span class="placeholder-text">[Your Project Link / ลิงก์โปรเจกต์]</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- THAI CONTENT -->
+                    <div class="lang-content hidden" id="content-th">
+                        <div class="policy-intro">
+                            <p>นโยบายความเป็นส่วนตัวนี้ อธิบายถึงวิธีการที่ <strong>AI Content Board</strong> ("แอปพลิเคชัน" หรือ "เรา") เข้าถึง เก็บรวบรวม จัดเก็บ ประมวลผล และปกป้องข้อมูลของคุณเมื่อคุณใช้งานซอฟต์แวร์ของเรา โดยเฉพาะข้อมูลที่เกี่ยวข้องกับบริการ YouTube API Services และ Google Gemini API</p>
+                            <p>เราให้ความสำคัญกับความเป็นส่วนตัวของคุณอย่างยิ่ง และมุ่งมั่นที่จะทำให้มั่นใจว่าข้อมูลของคุณจะปลอดภัยและอยู่ภายใต้การควบคุมของคุณอย่างสมบูรณ์</p>
+                        </div>
+
+                        <div class="policy-grid">
+                            <div class="policy-item">
+                                <h2>1. ข้อมูลที่เราเข้าถึงและเก็บรวบรวม</h2>
+                                <p>AI Content Board ถูกออกแบบมาให้ทำงานบนคอมพิวเตอร์หรือเซิร์ฟเวอร์ส่วนตัวของคุณ เราไม่มีเซิร์ฟเวอร์ส่วนกลางในการเก็บข้อมูลส่วนบุคคลของคุณ ด้านล่างนี้คือข้อมูลที่แอปพลิเคชันเข้าถึงเพื่อทำงานตามฟังก์ชัน:</p>
+                                <ul>
+                                    <li><strong>Google Gemini API Key:</strong> คีย์ที่คุณระบุเพื่อเปิดใช้งานการสร้างข้อความและคำอธิบายสำหรับโพสต์ด้วยปัญญาประดิษฐ์ (AI)</li>
+                                    <li><strong>YouTube OAuth Credentials (Client ID & Client Secret):</strong> ข้อมูลระบุตัวตนที่คุณป้อนเข้ามาหรือค่าเริ่มต้น เพื่อใช้ในการเข้าสู่ระบบและเชื่อมต่อกับบริการ YouTube API</li>
+                                    <li><strong>ข้อมูลบัญชี YouTube:</strong> เมื่อยืนยันตัวตนแล้ว แอปพลิเคชันจะเข้าถึงชื่อช่อง YouTube และรูปโปรไฟล์เพื่อแสดงสถานะการเชื่อมต่อ เราไม่มีการจัดเก็บรหัสผ่าน Google ของคุณ</li>
+                                    <li><strong>ไฟล์วิดีโอ:</strong> ไฟล์ที่คุณอัปโหลดเข้าสู่แอปพลิเคชันภายในเครื่อง เพื่อส่งไปเผยแพร่หรือตั้งเวลาโพสต์บนช่อง YouTube ของคุณ</li>
+                                </ul>
+                            </div>
+
+                            <div class="policy-item">
+                                <h2>2. วิธีการใช้ข้อมูลของคุณ</h2>
+                                <p>เราใช้ข้อมูลที่เข้าถึงผ่าน Google APIs และข้อมูลที่คุณระบุเพื่อสนับสนุนฟังก์ชันการทำงานหลักของแอปพลิเคชันเท่านั้น:</p>
+                                <ul>
+                                    <li><strong>การสร้างเนื้อหา (Content Generation):</strong> คีย์ Gemini API ของคุณจะถูกส่งไปยัง Google Gemini API endpoints โดยตรงเพื่อสร้างแคปชัน คำอธิบาย และชื่อโพสต์</li>
+                                    <li><strong>การอัปโหลดลง YouTube:</strong> เราใช้สิทธิ์ที่คุณอนุญาตเพื่ออัปโหลดวิดีโอ (ผ่านสิทธิ์ <code>https://www.googleapis.com/auth/youtube.upload</code>) และเข้าถึงข้อมูลช่องสำหรับการตรวจสอบสถานะ (ผ่านสิทธิ์ <code>https://www.googleapis.com/auth/youtube.readonly</code>) ในนามของคุณ</li>
+                                </ul>
+                            </div>
+
+                            <div class="policy-item">
+                                <h2>3. การจัดเก็บข้อมูลและการเก็บรักษา</h2>
+                                <p><strong>เราไม่มีการเปิดใช้ฐานข้อมูลบนเซิร์ฟเวอร์ภายนอก และไม่มีการโอนย้ายข้อมูลประจำตัวของคุณไปยังบุคคลที่สามใด ๆ ทั้งสิ้น</strong></p>
+                                <ul>
+                                    <li>ข้อมูล API Keys และโทเค็นการเข้าถึง (Access & Refresh Tokens) ทั้งหมดจะถูกจัดเก็บไว้บนอุปกรณ์ของคุณโดยตรง (ใช้ Local Storage ของบราว์เซอร์ และไฟล์ <code>data/storage.json</code> บนเซิร์ฟเวอร์จำลองของคุณ)</li>
+                                    <li>ไฟล์วิดีโอจะถูกจัดเก็บไว้ชั่วคราวบนเครื่องเซิร์ฟเวอร์ส่วนตัวของคุณและจะถูกลบหรือเก็บรักษาตามการตั้งค่าของคุณเอง</li>
+                                    <li>เราไม่มีการแชร์ ขาย หรือให้เช่าข้อมูลของคุณให้กับองค์กรภายนอกเด็ดขาด</li>
+                                </ul>
+                            </div>
+
+                            <div class="policy-item">
+                                <h2>4. ความปลอดภัยของข้อมูล</h2>
+                                <p>เนื่องจากข้อมูลทั้งหมดถูกจัดเก็บอยู่บนเครื่องของคุณ ความปลอดภัยของข้อมูลจึงขึ้นอยู่กับความปลอดภัยของสภาพแวดล้อมระบบของคุณเอง เราขอแนะนำให้คุณรักษาความปลอดภัยของคอมพิวเตอร์เครื่องที่รันแอปพลิเคชัน จำกัดการเข้าถึงที่ไม่ได้รับอนุญาต และหลีกเลี่ยงการเปิดเผยลิงก์เซิร์ฟเวอร์แบบสาธารณะโดยไม่มีการป้องกัน</p>
+                            </div>
+
+                            <div class="policy-item">
+                                <h2>5. สิทธิ์ของคุณและการยกเลิกการเชื่อมต่อ</h2>
+                                <p>คุณมีสิทธิ์ควบคุมการเข้าถึงระบบของแอปพลิเคชันได้อย่างเต็มที่ทุกเวลา:</p>
+                                <ul>
+                                    <li><strong>ล้างข้อมูลในเครื่อง (Clear Local Storage):</strong> คุณสามารถกดปุ่มยกเลิกการเชื่อมต่อบัญชี หรือรีเซ็ตการตั้งค่าได้โดยตรงที่ส่วนหัวของแอปพลิเคชัน ซึ่งจะลบข้อมูลคีย์และโทเค็นที่เก็บอยู่ออกจากระบบทันที</li>
+                                    <li><strong>ยกเลิกสิทธิ์บน Google:</strong> คุณสามารถยกเลิกการเชื่อมต่อสิทธิ์การเข้าถึงบัญชี Google ของแอปพลิเคชันนี้ได้ตลอดเวลาผ่านหน้าความปลอดภัยของบัญชี Google ที่: <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" class="link-glow">การตั้งค่าสิทธิ์บัญชี Google</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="policy-item">
+                                <h2>6. ติดต่อผู้พัฒนา</h2>
+                                <p>หากคุณมีคำถาม ข้อเสนอแนะ หรือข้อสงสัยเกี่ยวกับนโยบายความเป็นส่วนตัวหรือแอปพลิเคชัน AI Content Board โปรดติดต่อผู้พัฒนาได้ที่:</p>
+                                <div class="contact-box">
+                                    <p><strong>อีเมลผู้พัฒนา:</strong> <span class="placeholder-text">[Your Contact Email / อีเมลผู้พัฒนา]</span></p>
+                                    <p><strong>GitHub:</strong> <span class="placeholder-text">[Your Project Link / ลิงก์โปรเจกต์]</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="en">&copy; 2026 AI Content Board. All rights reserved. Self-hosted tool.</p>
+            <p class="th">&copy; 2569 AI Content Board. สงวนลิขสิทธิ์ เครื่องมือสำหรับการโฮสต์ส่วนบุคคล</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
