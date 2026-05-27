@@ -124,6 +124,32 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.nav-links {
+    display: flex;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: 32px;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide on mobile to keep it simple, or adjust layout */
+    }
+}
+
 /* Language Selector Tab-like interface */
 .language-selector {
     background: rgba(255, 255, 255, 0.05);
